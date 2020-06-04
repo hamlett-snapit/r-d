@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.css">
   <!-- TUTORIAL: https://www.youtube.com/watch?v=r_e1NTGYXy8&t=26s -->
+  <!-- Add this font to your PC https://www.dafont.com/lazer84.font -->
 </head>
 <!--TEST PUSH DESKTOP1-->
 <body>
@@ -19,53 +20,77 @@
       <div class="menu">
         <a href="#" class="logo">INTERNET</a>
         <ul>
-          <li><a href="#">MENS</a></li>
-          <li><a href="#">WOMENS</a></li>
-          <li><a href="#">CUSTOM</a></li>
+          <!-- These are ugly but want them to change the page without actually changing pages. Grip should be like the home page, accessories/merchandise will give access to different sets of images that will NOT have the 3d viewer option, so we need to find a way for that button to be specifically isolated to the Grip selection. -->
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Grip
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Accessories
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Merchandise
+          </label>
         </ul>
       </div>
       <!--Content-->
       <!--Text Container 1-->
       <div class="text-container1 active-text-slide">
         <div class="product-name">
-          <h1>ROLEX</h1>
+          <!--Is it possible to make this show up exactly as it is typed with capital G and S only?-->
+          <h1>GripSanity</h1>
         </div>
         <div class="footer">
           <div class="footer-heading">
-            <h2>ROLEX___42mm</h2>
+            <!--Need to move this a bit higher so I have room to describe the thing. May also convert to paragraph. -->
+            <h2>Product Description</h2>
           </div>
+          <!-- Pink cutting off when not full screen -->
+          <!-- The buttons lose their function when any of the 1,2,3 toggle options are selected. We need them to appear and be useful under the GRIP and ACCESSORIES (for handles NOT rod) -->
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Black
             </label>
             <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+              <input type="radio" name="options" id="option2" autocomplete="off"> Red
             </label>
             <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+              <input type="radio" name="options" id="option3" autocomplete="off"> Blue
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Green
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Orange
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Yellow
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Pink
             </label>
           </div>
-          <span>S</span>
+          <!-- <span>S</span>
           <span>M</span>
-          <span>L</span>
+          <span>L</span> -->
           <p style="color:#949393; font-weight:bold;">SIMPLICITY</p>
           <p>TESTTESTTESTTEST</p>
         </div>
         <!--Text Container 2-->
-        <div class="text-container2">
+        <!-- This will be helpful when accessories/merchandise are selected because there will be more than one product selling as opposed to grip which is only changing colors and showing 3d.-->
+          
+          <div class="text-container2">
           <div class="product-name">
-            <h1>ROLLO</h1>
+            <!-- will need selection tool to cycle between handle types there are 3 total atm-->
+            <h1>Handles</h1>
           </div>
           <div class="footer">
             <div class="footer-heading">
-              <h2>ROLLO___32mm</h2>
+              <h2>Springs</h2>
             </div>
-            <span>S</span>
-            <span>M</span>
-            <span>L</span>
+            <!--Need # selection for how many of these they want-->
             <p style="color:#949393; font-weight:bold;">SIMPLICITY</p>
             <p>TESTTESTTESTTEST</p>
-          </div>
+          </div> 
           <!--Social Link-->
           <div class="social">
             <a href="#" class="fb">Fb</a>
@@ -84,11 +109,11 @@
         <a href="#" class="cart"><img src="/collabWork/r-d/images/basket-cart-icon-27.png" height="30px;"></a>
         <a href="#" class="login">LOGIN</a>
       </div>
-      <!--Image Content-->
+      <!--Image Content FOR GRIP SELECTION AT TOP-->
       <!--(Slide 1) Image Container 1-->
       <div class="img-container1 active-img-slide">
         <div class="product-img">
-          <img src="/collabWork/r-d/images/w3.png" height="500px">
+          <img src="/collabWork/r-d/images/holder1.jpeg" height="500px">
           <div class="cart-opt">
             <p class="price">$225.00</p>
             <a href="#" class="add-btn">ADD TO CART</a>
@@ -98,6 +123,16 @@
       <!--(Slide 2) Image Container 2-->
       <div class="img-container2">
         <div class="product-img">
+          <img src="/collabWork/r-d/images/holder2.jpeg" height="500px">
+          <div class="cart-opt">
+            <p class="price">$205.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <!--(Slide 3) Image Container 3-->
+      <div class="img-container3">
+        <div class="product-img">
           <img src="/collabWork/r-d/images/w4.png" height="500px">
           <div class="cart-opt">
             <p class="price">$205.00</p>
@@ -105,10 +140,83 @@
           </div>
         </div>
       </div>
+      <!-- Image Content FOR ACCESSORIES SELECTION AT TOP--WE REMOVE COMMENT OUT WHEN WE HAVE IT ATTACHED
+      <!--(Slide 1) BALL KNOB Image Container 1-->
+      <!-- <div class="img-container1 active-img-slide">
+        <div class="product-img">
+          <img src="/collabWork/r-d/images/ball knob grip.png" height="500px">
+          <div class="cart-opt">
+            <p class="price">$225.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
+      <!--(Slide 2) 5 ARM GRIP Image Container 2-->
+      <!-- <div class="img-container2">
+        <div class="product-img">
+          <img src="/collabWork/r-d/images/5 arm grip.png" height="500px">
+          <div class="cart-opt">
+            <p class="price">$205.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
+      <!--(Slide 3) HANDLE GRIP Image Container 3-->
+      <!-- <div class="img-container3">
+        <div class="product-img">
+          <img src="/collabWork/r-d/images/handle grip.png" height="500px">
+          <div class="cart-opt">
+            <p class="price">$205.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
+      <!--(Slide 4) SPRINGS Image Container 4-->
+      <!-- <div class="img-container3">
+        <div class="product-img">
+          <img src="/collabWork/r-d/images/springs.png" height="500px">
+          <div class="cart-opt">
+            <p class="price">$205.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
+      <!--Image Content FOR MERCHANDISE SELECTION AT TOP--WE REMOVE COMMENT OUT WHEN WE HAVE IT ATTACHED-->
+      <!--(Slide 1) MAGNET Image Container 1-->
+      <!-- <div class="img-container1 active-img-slide">
+        <div class="product-img">
+          <img src="" height="500px">
+          <div class="cart-opt">
+            <p class="price">$225.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- (Slide 2) POSTER Image Container 2
+      <div class="img-container2">
+        <div class="product-img">
+          <img src="" height="500px">
+          <div class="cart-opt">
+            <p class="price">$205.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
+      <!--(Slide 3) OTHER STUFF Image Container 3-->
+      <!-- <div class="img-container3">
+        <div class="product-img">
+          <img src="" height="500px">
+          <div class="cart-opt">
+            <p class="price">$205.00</p>
+            <a href="#" class="add-btn">ADD TO CART</a>
+          </div>
+        </div>
+      </div> -->
       <!--Change Slide Buttons-->
       <div class="button">
         <a href="#" class="first-btn active-btn">01</a>
         <a href="#" class="second-btn">02</a>
+        <a href="#" class="second-btn">03</a>
       </div>
     </div>
 
