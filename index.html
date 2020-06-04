@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="3dstyle.css">
   <!-- TUTORIAL: https://www.youtube.com/watch?v=r_e1NTGYXy8&t=26s -->
   <!-- Add this font to your PC https://www.dafont.com/lazer84.font -->
 </head>
@@ -111,7 +112,8 @@
         <a href="#" class="login">LOGIN</a>
       </div>
       <!--Image Content FOR GRIP SELECTION AT TOP-->
-      <!--(Slide 1) Image Container 1-->
+      <!--(Slide 1) PRODUCT Image Container 1-->
+      <!--How do we tie in the color selection to this image structure?-->
       <div class="img-container1 active-img-slide">
         <div class="product-img">
           <img src="/collabWork/r-d/images/holder1.jpeg" height="500px">
@@ -125,16 +127,6 @@
       <div class="img-container2">
         <div class="product-img">
           <img src="/collabWork/r-d/images/holder2.jpeg" height="500px">
-          <div class="cart-opt">
-            <p class="price">$205.00</p>
-            <a href="#" class="add-btn">ADD TO CART</a>
-          </div>
-        </div>
-      </div>
-      <!--(Slide 3) Image Container 3-->
-      <div class="img-container3">
-        <div class="product-img">
-          <img src="/collabWork/r-d/images/w4.png" height="500px">
           <div class="cart-opt">
             <p class="price">$205.00</p>
             <a href="#" class="add-btn">ADD TO CART</a>
@@ -217,18 +209,78 @@
       <div class="button">
         <a href="#" class="first-btn active-btn">01</a>
         <a href="#" class="second-btn">02</a>
-        <a href="#" class="second-btn">03</a>
+        <!--Only need under non Grip selection-->
+          <!-- <a href="#" class="second-btn">03</a> -->
       </div>
     </div>
 
   </div>
 
+  <!--3D Model-->
 
+  <div class="img-container">
+    <a href="#" onclick="document.getElementById('modal-wrapper').style.display='block'"><img src="/collabWork/r-d/images/CAR.png"></a>
 
+<button onclick="document.getElementById('modal-wrapper').style.display='block'"
+><font style="font-weight:bold">3D</font> View</button>
+</div>
 
+<div id="modal-wrapper" class="modal">
+  <div class="center">
+  <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times;</span>
+  <div class="rotation">
+  
+      <img src="/collabWork/r-d/images/360/2.png">
+      <img src="/collabWork/r-d/images/360/3.png">
+      <img src="/collabWork/r-d/images/360/4.png">
+      <img src="/collabWork/r-d/images/360/5.png">
+      <img src="/collabWork/r-d/images/360/6.png">
+      <img src="/collabWork/r-d/images/360/7.png">
+      <img src="/collabWork/r-d/images/360/8.png">
+      <img src="/collabWork/r-d/images/360/9.png">
+      <img src="/collabWork/r-d/images/360/10.png">
+      <img src="/collabWork/r-d/images/360/11.png">
+      <img src="/collabWork/r-d/images/360/12.png">
+      <img src="/collabWork/r-d/images/360/13.png">
+      <img src="/collabWork/r-d/images/360/14.png">
+      <img src="/collabWork/r-d/images/360/15.png">
+      <img src="/collabWork/r-d/images/360/16.png">
+      <img src="/collabWork/r-d/images/360/17.png">
+      <img src="/collabWork/r-d/images/360/18.png">
+      <img src="/collabWork/r-d/images/360/19.png">
+      <img src="/collabWork/r-d/images/360/20.png">
+      <img src="/collabWork/r-d/images/360/21.png">
+      <img src="/collabWork/r-d/images/360/22.png">
+      <img src="/collabWork/r-d/images/360/23.png">
+      <img src="/collabWork/r-d/images/360/24.png">
+      <img src="/collabWork/r-d/images/360/25.png">
+      <img src="/collabWork/r-d/images/360/26.png">
+      <img src="/collabWork/r-d/images/360/27.png">
+      <img src="/collabWork/r-d/images/360/28.png">
+      <img src="/collabWork/r-d/images/360/29.png">
+      <img src="/collabWork/r-d/images/360/30.png">
+      <img src="/collabWork/r-d/images/360/31.png">
+      <img src="/collabWork/r-d/images/360/32.png">
+      <img src="/collabWork/r-d/images/360/33.png">
+      <img src="/collabWork/r-d/images/360/34.png">
+      <img src="/collabWork/r-d/images/360/35.png">
+      <img src="/collabWork/r-d/images/360/36.png">
+      <img src="/collabWork/r-d/images/360/37.png">
+      <img src="/collabWork/r-d/images/360/38.png">
+      <img src="/collabWork/r-d/images/360/39.png">
+      <img src="/collabWork/r-d/images/360/40.png">
+      <img src="/collabWork/r-d/images/360/41.png">
+      <img src="/collabWork/r-d/images/360/42.png">
+      <img src="/collabWork/r-d/images/360/43.png">
+      <img src="/collabWork/r-d/images/360/44.png">
+      <img src="/collabWork/r-d/images/360/45.png">
 
-
-
+  
+  </div>
+  
+  </div>
+  </div>
+  
   <p>
     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
       Link with href
@@ -242,16 +294,6 @@
       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
 
   <!--Adding JQuery Link-->
   <script type="text/javascript" src="jquery-3.1.1.js"></script>
@@ -279,6 +321,8 @@
   </script>
   <script src="/node_modules/bootstrap/js/dist/button.js"></script>
   <script src="/node_modules/bootstrap/js/dist/collapse.js"></script>
+  <!--360-->
+  <script src="360deg.js"></script>
 </body>
 
 </html>
