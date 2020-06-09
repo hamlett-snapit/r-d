@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GripSanity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="tablink" onclick="openPage('Grip', this, 'red')" id="defaultOpen">Grip</button>
+<button class="tablink" onclick="openPage('Accessories', this, 'green')">Accessories</button>
+<button class="tablink" onclick="openPage('Merchandise', this, 'blue')">Merchandise</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+<div id="Grip" class="tabcontent">
+  <h3>Grip</h3>
+  <p>Home</p>
+
+  <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+  </button><font style="font-weight:bold">3D</font> View</button>
+  </div>
+  
+  <div id="modal-wrapper" class="modal">
+    <div class="center">
+    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times;</span>
+    <div class="rotation">
+    
+        <img src="/collabWork/r-d/images/360/2.png">
+        <img src="/collabWork/r-d/images/360/3.png">
+        <img src="/collabWork/r-d/images/360/4.png">
+        <img src="/collabWork/r-d/images/360/5.png">
+        <img src="/collabWork/r-d/images/360/6.png">
+        <img src="/collabWork/r-d/images/360/7.png">
+        <img src="/collabWork/r-d/images/360/8.png">
+        <img src="/collabWork/r-d/images/360/9.png">
+        <img src="/collabWork/r-d/images/360/10.png">
+        <img src="/collabWork/r-d/images/360/11.png">
+        <img src="/collabWork/r-d/images/360/12.png">
+        <img src="/collabWork/r-d/images/360/13.png">
+        <img src="/collabWork/r-d/images/360/14.png">
+        <img src="/collabWork/r-d/images/360/15.png">
+        <img src="/collabWork/r-d/images/360/16.png">
+        <img src="/collabWork/r-d/images/360/17.png">
+        <img src="/collabWork/r-d/images/360/18.png">
+        <img src="/collabWork/r-d/images/360/19.png">
+        <img src="/collabWork/r-d/images/360/20.png">
+        <img src="/collabWork/r-d/images/360/21.png">
+        <img src="/collabWork/r-d/images/360/22.png">
+        <img src="/collabWork/r-d/images/360/23.png">
+        <img src="/collabWork/r-d/images/360/24.png">
+        <img src="/collabWork/r-d/images/360/25.png">
+        <img src="/collabWork/r-d/images/360/26.png">
+        <img src="/collabWork/r-d/images/360/27.png">
+        <img src="/collabWork/r-d/images/360/28.png">
+        <img src="/collabWork/r-d/images/360/29.png">
+        <img src="/collabWork/r-d/images/360/30.png">
+        <img src="/collabWork/r-d/images/360/31.png">
+        <img src="/collabWork/r-d/images/360/32.png">
+        <img src="/collabWork/r-d/images/360/33.png">
+        <img src="/collabWork/r-d/images/360/34.png">
+        <img src="/collabWork/r-d/images/360/35.png">
+        <img src="/collabWork/r-d/images/360/36.png">
+        <img src="/collabWork/r-d/images/360/37.png">
+        <img src="/collabWork/r-d/images/360/38.png">
+        <img src="/collabWork/r-d/images/360/39.png">
+        <img src="/collabWork/r-d/images/360/40.png">
+        <img src="/collabWork/r-d/images/360/41.png">
+        <img src="/collabWork/r-d/images/360/42.png">
+        <img src="/collabWork/r-d/images/360/43.png">
+        <img src="/collabWork/r-d/images/360/44.png">
+        <img src="/collabWork/r-d/images/360/45.png">
+  
+    
+    </div>
+    
+    </div>
+    </div>
+    
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  
+    <!--Adding JQuery Link-->
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      //slide-btns
+      $(document).on('click', '.first-btn,.second-btn', function () {
+        $(this).addClass('active-btn').siblings().removeClass('active-btn')
+      });
+      //text-slide
+      $(document).on('click', '.first-btn', function () {
+        $('.text-container1').addClass('active-text-slide').siblings('.text-container2').removeClass(
+          'active-text-slide')
+      });
+      $(document).on('click', '.second-btn', function () {
+        $('.text-container2').addClass('active-text-slide').siblings('.text-container1').removeClass(
+          'active-text-slide')
+      });
+      //for img slide
+      $(document).on('click', '.first-btn', function () {
+        $('.img-container1').addClass('active-img-slide').siblings('.img-container2').removeClass('active-img-slide')
+      });
+      $(document).on('click', '.second-btn', function () {
+        $('.img-container2').addClass('active-img-slide').siblings('.img-container1').removeClass('active-img-slide')
+      });
+    </script>
+    <script src="/node_modules/bootstrap/js/dist/button.js"></script>
+    <script src="/node_modules/bootstrap/js/dist/collapse.js"></script>
+    <!--360-->
+    <script src="360deg.js"></script>
+    
+</div>
+
+<div id="Accessories" class="tabcontent">
+  <h3>Accessories</h3>
+  <p>Stuff</p>
+</div>
+
+<div id="Merchandise" class="tabcontent">
+  <h3>Merchandise</h3>
+  <p>More Stuff</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Email</p>
+</div>
+
+<script>
+  function openPage(itemName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+          tablinks[i].style.color = "";
+      }
+      document.getElementById(itemName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+      elmnt.style.color = "white";
+  
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script><br>
+  <p style="margin-top:2px">
+  
+<script src="main.js"></script>
+</body>
+</html>
